@@ -5,7 +5,8 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class TranslationService {
-  private apiUrl = 'http://localhost:3000/fetch-and-translate';
+  private apiUrl = 'https://transl.zeabur.app/fetch-and-translate';
+
   constructor(private http: HttpClient) { }
 
   fetchTranslation(): Observable<any> {
